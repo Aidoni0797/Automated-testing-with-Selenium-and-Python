@@ -86,5 +86,26 @@ HTML-документ часто сравнивают с моделью семе
 - предок элемента У - любой элемент Х, который включает в себя элемент У;
 - родитель - это прямой предок (т.е. элемент, который расположен выше строго на 1 уровень);
 - братский или соседний элемент - элемент Х, который расположен на одном уровне иерархии с элементом У.
-Элементы
+Элементы Х и У имеют одного родителя.
 
+Теперь попробуем закрепить терминологию на прмиере. Возьмём такой пример HTML кода:
+
+<div class="news">
+<div class="title">
+<p class="title_text">Selenium 4alpha is put now</p>
+</div>
+<div clasas="text_block">
+<p class="first">After 3 years from it's a major release, now Selenium has put out its first alpha
+version of Selenium 4 on April 24, 2019.</p>
+<p class="second">If ypu want you can make your hands dirty with Selenium 4 and it's feature by
+downloading the dependencies from Maven Repository.</p>
+</div>
+</div>
+
+Теперь нарисуем блок-схему этого HTML кода, где каждый блок будет соответствовать одному HTML элементу.
+
+- Какие элементы являются потомками элемента, имеющего class="news"? Это все остальные элементы в этом 
+html-коде: элемент с class="title", элемент с class="title_text" и другие.
+- Какие элементы можно назвать дочерними (child) элементами для элемента с class="news"? 
+Только элементы с class="title" and class="text_block".
+- Какие
