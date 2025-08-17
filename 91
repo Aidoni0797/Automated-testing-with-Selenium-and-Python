@@ -65,4 +65,11 @@ C:\Users\user и к папке с загруженным файлом.
 
 C:\Users\user> mkdir selenium_course
 C:\Users\user> copy C:\Users\user\Downloads\first_script.py c:\Users\user\selenium_course
-C:\Users\user> environmentrs
+C:\Users\user> environments\selenium_env\Scripts\activate.bat
+(selenium_dev) C:\Users\user>python c:\Users\user\selenium_course\first_script.py
+
+Пример для Ubuntu and macOS
+
+mkdir ~/selenium_course
+mv ~/Downloads/frist_script.py ~/selenium_course
+python ~/selenium_course/first_script.py
