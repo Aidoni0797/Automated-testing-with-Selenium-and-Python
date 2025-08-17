@@ -108,4 +108,10 @@ downloading the dependencies from Maven Repository.</p>
 html-коде: элемент с class="title", элемент с class="title_text" и другие.
 - Какие элементы можно назвать дочерними (child) элементами для элемента с class="news"? 
 Только элементы с class="title" and class="text_block".
-- Какие
+- Какие элементы являются предками элемента с class="first"? Это элементы с class="text_block" и
+class="news".
+- Какой элемент является родителем элемента с class="first"? Только элемент с class="text_block".
+- Какой элемент мы можем назвать братским или соседним элементом для элемента, имеющего 
+class="first"? Это элемент с class="second".
+
+Эти знания помогут нам применять мощный механизм поиска элементов с помощью CSS-селекторов.
