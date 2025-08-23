@@ -42,4 +42,19 @@ Checkboxes могут иметь как одинаковые, так и разн
 Чтобы снять/поставить галочку в элементе типа checkbox или выбрать опцию из группы radiobuttons,
 надо указать Webdriver метод поиска элемента и выполнить для найденного элемента метод click():
 
-option1 = browser.find_element(By.CSS_SELECTOR, )
+option1 = browser.find_element(By.CSS_SELECTOR, "[value='python']")
+
+Также вы можете увидеть тег label рядом с input. Этот тег используется, чтобы сделать кликабельным текст,
+который отображается рядом с флажком. Этот текст заключен внутри тега label. Элемент label связывается
+с элементом input с помощью атрибута for, в котором указывается значение атрибута id для элемента input.
+
+<div>
+  <input type="radio" id="python" name="language" checked>
+  <label for="python">Python</label>
+</div>
+<div>
+  <input type="radio" id="java" name="language">
+  <label for="java">Java</label>
+</div>
+
+В этом случае
