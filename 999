@@ -20,4 +20,7 @@ Selenium
 
 Оба этих элемента создаются при помощи тега input со значением атрибута type равным checkbox or
 radio соответственно. В html-коде страницы вы увидите:
-<input type ="">
+<input type ="checkbox">
+<input type="radio">
+
+Если checkbox или radiobutton выбран, то у элемента появится новый атрибут checked без значения.
