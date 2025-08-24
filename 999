@@ -57,4 +57,8 @@ option1 = browser.find_element(By.CSS_SELECTOR, "[value='python']")
   <label for="java">Java</label>
 </div>
 
-В этом случае
+В этом случае можно также отметить нужный пункт с помощью WebDrivedr, выполнив метод click() на 
+элементе label.
+
+option1 = browser.find_element(By.CSS_SELECTOR, "[for='java']")
+option1.click()
