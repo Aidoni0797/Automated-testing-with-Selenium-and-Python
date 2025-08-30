@@ -44,3 +44,11 @@ button.click()
 "return arguments[0].scrollIntoView(true);"
 Мы дополнительно передали в метод scrollIntoView аргумент true, чтобы элемент после скролла оказался в области видимости.
 Другие возможные параметры метода можно посмотреть здесь: 
+ https://developer.mozilla.org/ru/docs/Web/API/Element/scrollIntoView
+
+В итоге, чтобы кликнуть на перекрытую кнопку, нам нужно выполнить следующие команды в коде:
+
+button = browser.find_element(By.TAG_NAME, "button")
+browser.execute_script("return arguments[0].scrollIntoView(true);", button)
+button.click()
+
