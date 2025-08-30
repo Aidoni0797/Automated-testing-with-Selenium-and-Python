@@ -65,4 +65,4 @@ browser.execute_script("wubdow.scrollBy(0,100);")
 WebDriver:
 
 //javascript
-button = document.
+button = document.getElementByTag
