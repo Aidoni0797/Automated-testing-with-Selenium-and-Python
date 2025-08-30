@@ -23,3 +23,8 @@ browser = webdriver.Chrome()
 browser.execute_script("alert('Robots at work');")
 
 Обратите внимание, что исполняемый JavaScript нужно заключать в кавычки (двойные или одинарные). Если
+внутри скрипта вам также понадобится использовать кавычки, а для выделения скрипта вы уже используете 
+двойные кавычки, то в скрипте следует пставить одинарные:
+browser.execute_script("document.title='Script executing';")
+Такой формат записи тоже будет работать:
+browser.execute_script('document.title="Script executing";')
