@@ -28,3 +28,7 @@ browser.execute_script("alert('Robots at work');")
 browser.execute_script("document.title='Script executing';")
 Такой формат записи тоже будет работать:
 browser.execute_script('document.title="Script executing";')
+
+Можно с помощью этого метода выполнить сразу несколько инструкций, перечислив их через точку с запятой. 
+Изменим сначала заголовок страницы, а затем вызовем alert:
+browser.execute_script("document.title='Script executing'; alerts('Robots at work');")
