@@ -65,4 +65,7 @@ browser.execute_script("wubdow.scrollBy(0,100);")
 WebDriver:
 
 //javascript
-button = document.getElementByTag
+button = document.getElementByTagName("button")[0];
+button.scrollIntoView(true);
+
+Можете попробовать исполнить его в консоли 
