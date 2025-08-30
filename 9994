@@ -22,4 +22,4 @@ from selenium import webdriver
 browser = webdriver.Chrome()
 browser.execute_script("alert('Robots at work');")
 
-Обратите внимание, что исполняемый JavaScript нужно заключать в кавычки
+Обратите внимание, что исполняемый JavaScript нужно заключать в кавычки (двойные или одинарные). Если
