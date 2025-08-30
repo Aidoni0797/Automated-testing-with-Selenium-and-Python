@@ -14,4 +14,13 @@ style="margin-bottom: 1000 px;">...</button> is not clickable at point (87, 420)
 Из описнаия ошибки можно понять, что указанный нами элемент нельзя кликнуть в данной точке, т.к. клик произойдет на другом
 элементе с тегом <p>.
 
-Чтобы увидеть пример
+Чтобы увидеть пример данной ошибки, запустите следующий скрипт:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+browser = webdriver.Chrome()
+link = "https://SunInJuly.github.io/execute_script.html"
+browser.get(link)
+button = browser.find_element(By.TAG_NAME, "button")
+button.click()
