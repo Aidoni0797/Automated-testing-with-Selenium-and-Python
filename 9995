@@ -68,4 +68,6 @@ WebDriver:
 button = document.getElementByTagName("button")[0];
 button.scrollIntoView(true);
 
-Можете попробовать исполнить его в консоли 
+Можете попробовать исполнить его в консоли браузера на странице  http://suninjuly.github.io/execute_script.html.  Для
+этолго откройте инструменты разработчика в браузере, перейдите на складку консоль (console), скопируйте туда этот код 
+и нажмите Enter. Таким образом можно протестировать кусочки
