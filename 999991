@@ -1,0 +1,12 @@
+999991
+
+Содержание урока
+
+Немного про современный веб
+Как работают методы get and find_element
+Давайте быстрее это починим: time.sleep()
+Есть способы получше: Selenium Waits (Implicit waits)
+Задание: Про Exceptions
+Explicit Waits (WebDriverWait and expected_conditions)
+Задание: ждем нужный текст на странице
+Итоги урока
