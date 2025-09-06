@@ -47,4 +47,5 @@ no such element: Unable to locate element: {"method": "id", "selector": "verify_
 Задание явных ожиданий реализуется с помощью инструентов WebDriverWait и expected_conditions.
 Улучшим наш тест:
 
-from selenium
+from selenium.webdriver.common.by import By
+from selenium.webdriver.suppi\ort.ui import WebDrivrWait
