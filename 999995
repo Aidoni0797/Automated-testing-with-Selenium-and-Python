@@ -23,4 +23,16 @@ from selenium.webdriver.common.by import By
 
 browser = webdriver.Chrome()
 # говорим WebDriver искать каждый элемент в течение 5 секунд
-browser.implicitly
+browser.implicitly_wait(5)
+
+bowser.get("http://suninjuly.github.io/wait1.html")
+
+button = browser.find_element(By.ID, "verify")
+button.click()
+message = browser.find_element(By.ID, "verify_message")
+
+assert "successful" in message.text
+
+Теперь мы можем быть уверены, что при небольших задержках в работе сайте наши тесты продолжат работать
+стабильно. На каждый вызов команды find_element WebDriver будет ждеть 5 секунд до появления элемента на
+странице прежде, чем выбросить исключение NoSuchElementException.
