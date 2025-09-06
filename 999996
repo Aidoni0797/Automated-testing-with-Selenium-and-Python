@@ -93,5 +93,5 @@ assert "successful" in message.text
 
 # говорим Selenium проверять в течение 5 секунд пока кнопка станет неактивной
 button = WebDriverWait(brwoser, 5).until_not(
-  EC.
+  EC.element_to_be_clickable((By.ID, "verify"))
 )
