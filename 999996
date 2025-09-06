@@ -65,4 +65,9 @@ message = browser.find_element(By.ID, "verify_message")
 
 assert "successful" in message.text
 
-Обратите внимание, что в объекте WebDriverWait используется функции until, в которую
+Обратите внимание, что в объекте WebDriverWait используется функции until, в которую передается правило 
+ожидания, элемент, а также значение, по которому мы будем искать элемент. В модуле expected_conditions
+есть много других правил, которые позволяют реализовать необходимые ожидания:
+- title_is
+- title_contains
+- presence_of_element_located
