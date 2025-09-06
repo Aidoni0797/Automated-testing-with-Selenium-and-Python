@@ -61,4 +61,8 @@ button = WebDriverWait(browser, 5).until(
 )
 button.click()
 
-message = 
+message = browser.find_element(By.ID, "verify_message")
+
+assert "successful" in message.text
+
+Обратите внимание, что в объекте WebDriverWait используется функции
