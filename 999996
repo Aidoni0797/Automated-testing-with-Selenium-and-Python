@@ -73,3 +73,4 @@ assert "successful" in message.text
 - presence_of_element_located
 - visibility_of_element_located
 - visibility_of
+- presence
