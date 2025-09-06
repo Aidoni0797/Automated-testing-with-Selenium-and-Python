@@ -65,4 +65,4 @@ message = browser.find_element(By.ID, "verify_message")
 
 assert "successful" in message.text
 
-Обратите внимание, что в объекте WebDriverWait используется функции
+Обратите внимание, что в объекте WebDriverWait используется функции until, в которую
