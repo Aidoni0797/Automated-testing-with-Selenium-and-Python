@@ -38,4 +38,4 @@ https://realpython.com/python-string-formatting/#using-the-formatting-mini-langu
 Если вкратце, то python умеет подставлять пользовательские значения в строки с помощью функции .format(). Синтаксис выглядит
 примерно так:
 
-"Let's count"
+"Let's count together: {}, then"
