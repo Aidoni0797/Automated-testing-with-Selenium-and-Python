@@ -15,4 +15,12 @@ assert self.is_element_present('create_class_button', timeout=30), "No create cl
 
 Если элеент встречается на нескольких страницах приложения, не лишним будет указать, где именно произошла ошибка:
 
-assert self.is_element_present('new_announcement_button', timeout=30), "No"
+assert self.is_element_present('new_announcement_button', timeout=30), "No new announcement button on profile page"
+
+Если вы работает с каким-то текстом (например, проверяете информационное сообщение, текущий url, 
+ссылку, placeholder в input-элементе или любой другой текст), в сообщений об ошибке всегда лучше выводить оба значения: то,
+которое ожидалось, и то, которое получили по факту. Всё как в хорошем багрепорте: ожидаемый и фактический результать.
+
+Форматирование строк  с помощью конкатенации строк, например:
+
+
