@@ -27,4 +27,11 @@ File "<stdin>", line 1, in <module>
 AssertionError
 
 Простое сообщение AssertionError оне очень информативно. Когда тестов становится много, бывает сложно вспомнить, что именно мы 
-проверяем в данном тесте. Для добавления дополнительного сообщения
+проверяем в данном тесте. Для добавления дополнительного сообщения можно при вызове assert через запятую написать
+нужное сообщение, которое будет выведено в случае ошибки проверки результата:
+
+>>> assert abs(-42) == -42, "Should be absolute value of a number"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+
+AssertionError: Should be absolute value of a number
