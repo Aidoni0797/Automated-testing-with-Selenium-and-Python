@@ -33,3 +33,9 @@ print("Wrong text, got " + actual+result + ", something wrong")
 Форматирование строк с помощью str.format
 
 Гораздо лучше воспользоваться возможностью python для форматирования строк. Дополнительно можно почитать здесь:
+https://realpython.com/python-string-formatting/#using-the-formatting-mini-language-with-format
+
+Если вкратце, то python умеет подставлять пользовательские значения в строки с помощью функции .format(). Синтаксис выглядит
+примерно так:
+
+"Let's count"
