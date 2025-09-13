@@ -39,4 +39,17 @@ https://realpython.com/python-string-formatting/#using-the-formatting-mini-langu
 примерно так:
 
 "Let's count together: {}, then goes {}, and then {}".format("one", "two", "three")
-Попробуйте запустить её
+Попробуйте запустить её в интерпретаторе:
+
+print("Let's count together: {}, then goes {}, and then {}".format("one", "two", "three"))
+
+Такая строка при исполнении кода превратится в:
+Let's count together: one, then goes two, and then three
+
+Таким образом мы можем удобно компоновать ожидаемое и фактическое значение в одну строку.
+
+Форматирование строк с помощью f-strings
+
+И наконец наиболее современный способ форматирования строк, который появился в Python3.6, носит
+название f-strings. Он позволяет исполнять выражения на Python прямо внутри строк, обладает еше
+большей локаничностью и удобством исполь
