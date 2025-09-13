@@ -97,4 +97,4 @@ f"Wrong language, got {self.catalog_link.text} instead of 'Каталог'"
 
 правильно:
 
-catalo
+catalog_text = self.catalog_link.text # считываем текст и записываем его в переменную
