@@ -12,3 +12,5 @@
 pip freeze>requirements.txt
 
 Эта команда сохранит все серии пакетов в специальный файл requirements.txt
+
+Как их
