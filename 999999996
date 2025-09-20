@@ -79,4 +79,9 @@ class TestMainPage2():
     print("start browser for test..")
     self.browser = webdriver.Chrome()
 
-  def teardown
+  def teardown_method(self):
+    print("quit browser for test..")
+    self.browser.quit()
+
+  def test_guest_should_see_login_link(self):
+    
