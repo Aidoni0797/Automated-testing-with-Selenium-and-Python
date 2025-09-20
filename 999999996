@@ -78,3 +78,5 @@ class TestMainPage2():
   def setup_method(self):
     print("start browser for test..")
     self.browser = webdriver.Chrome()
+
+  def teardown
